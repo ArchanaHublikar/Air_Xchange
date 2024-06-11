@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Market</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="background-image">
+    <div class="container">
+        <header>
+            <h1>Cryptocurrency Market</h1>
+        </header>
+        
+        <section id="converter">
+            <h2>Crypto Converter</h2>
+            <input type="number" id="amount" placeholder="Enter amount in USD">
+            <select id="crypto-select">
+                <!-- Options will be populated by JavaScript -->
+            </select>
+            <button onclick="convert()">Convert</button>
+            <p id="conversion-result"></p>
+        </section>
+
+        <section id="market">
+            <h2>Market Overview</h2>
+            <table id="market-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Market Cap</th>
+                        <th>Change (24h)</th>
+                        <th>Price Graph (7d)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
